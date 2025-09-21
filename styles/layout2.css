@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+.container { width: 960px; margin: 20px auto; }
+.box { background:#cfcfcf; padding:10px; border-radius:2px; }
+.footer { display:grid; place-items:center; height:60px; grid-column:1 / -1; }
+.nav { background:#cfcfcf; display:grid; grid-auto-flow:column; gap:40px; padding:12px 24px; justify-content:center; align-items:center; }
+
+.layout2 { display:grid; grid-template-columns:repeat(12, 1fr); gap:20px; }
+.layout2 .logo { grid-column:1 / span 3; height:50px; }
+.layout2 .nav { grid-column:6 / -1; }
+.layout2 h1 { grid-column:1 / -1; margin:10px 0 0; font-size:48px; line-height:1.1; }
+.layout2 .sub { grid-column:1 / -1; margin:0 0 10px; font-size:20px; }
+.layout2 .gallery { grid-column:1 / -1; display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+.layout2 .gallery .box { height:180px; }
